@@ -5292,6 +5292,26 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-berkshire-swash@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-berkshire-swash/-/typeface-berkshire-swash-0.0.72.tgz#027948f13d42391eef8e74cd4bdad4c81593eccb"
+  integrity sha512-xCNscC8EGZ7IVsADLk1fJKLbHXxWwHD4txS8Ou9hPHDfF6dXKDleVTij1HUTo9Azg44IfE2ZlWUxYrCaCptjbg==
+
+typeface-cooper-hewitt@^0.0.44:
+  version "0.0.44"
+  resolved "https://registry.yarnpkg.com/typeface-cooper-hewitt/-/typeface-cooper-hewitt-0.0.44.tgz#def4915d143bebb8a9a1ca4ea6b81946271a2a57"
+  integrity sha512-5TEnSbhWCnCQ25dGaFrSqCphJQoAaVeCuqmMMAXLK7uOiOn3YrMBdpq2nh4R6SEM+Z7FGYXZY7/Vdz/cDl06Ww==
+
+typeface-libre-franklin@^0.0.75:
+  version "0.0.75"
+  resolved "https://registry.yarnpkg.com/typeface-libre-franklin/-/typeface-libre-franklin-0.0.75.tgz#7b8a1cfaf3da9324b4f7cf5c58220fa440a7a998"
+  integrity sha512-bpX2YsybHkft0ewKAukZWgjOr3r7vQ9NG0jwGj9HGv1A3/wcuoafkv7pK5cGouAjLNqVuKIkdelgefdDhGg/fw==
+
+typeface-vt323@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-vt323/-/typeface-vt323-0.0.72.tgz#795475d3540610754db5e366dccac612c29ee4c8"
+  integrity sha512-yXVY4/iVgQDnE397T3mgXhhUSRk1vt8lmz5BlpGDlRR78BHXfuzg03UZ/owG5b8YbUFrLekDDy8MGTXRNhqi/Q==
+
 typescript@^3.9.7:
   version "3.9.7"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"

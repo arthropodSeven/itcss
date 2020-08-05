@@ -47,6 +47,10 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+
+          <pre>{`
+            this website has been hacked by andrew
+          `}</pre>
         </div>
       </main>
 
