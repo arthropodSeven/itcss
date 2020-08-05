@@ -1,0 +1,21 @@
+.code-page {
+  height: 100vh;
+  width: 100vw;
+
+  padding: 16ch;
+
+  background: antiquewhite;
+}
+
+.code-page pre {
+  max-width: 80ch;
+
+  background: black;
+  color: peru;
+
+  margin: -2ch -4ch;
+  padding: 2ch 4ch;
+  outline: solid 1ch coral;
+
+  text-shadow: 0px 0px 10px currentColor;
+}
