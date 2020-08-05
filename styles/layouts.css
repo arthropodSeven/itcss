@@ -9,13 +9,13 @@
 
 .code-page pre {
   max-width: 80ch;
+}
 
-  background: black;
-  color: peru;
-
+.code-page pre > code {
   margin: -2ch -4ch;
   padding: 2ch 4ch;
+
   outline: solid 1ch coral;
 
-  text-shadow: 0px 0px 10px currentColor;
+  text-shadow: 0.5px 0.25px 6px currentColor;
 }

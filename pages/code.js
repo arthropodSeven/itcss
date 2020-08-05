@@ -7,6 +7,12 @@ const CodePage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
+    <div>
+      <h1 style={{marginBottom: '2em'}}>
+      {'Hacked By Andrew'}
+      </h1>
+    </div>
+
     <pre><code className="css">{`
 hgroup, h1, h2, h3, h4, *.heading {
   font-family: 'Berkshire Swash';
