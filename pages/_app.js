@@ -19,8 +19,9 @@ import 'typeface-berkshire-swash'
 import 'typeface-cooper-hewitt'
 import 'typeface-vt323'
 import 'typeface-libre-franklin'
+import 'styles/core.scss'
 import 'styles/globals.css'
-import 'styles/layouts.css'
+import 'styles/layouts.scss'
 
 hljs.registerLanguage('javascript', javascript)
 hljs.registerLanguage('css', css)

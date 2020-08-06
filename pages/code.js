@@ -8,12 +8,11 @@ const CodePage = () => (
     </Head>
 
     <div>
-      <h1 style={{marginBottom: '2em'}}>
-      {'Hacked By Andrew'}
-      </h1>
+      <h1 style={{ marginBottom: '2em' }}>{'Hacked By Andrew'}</h1>
     </div>
 
-    <pre><code className="css">{`
+    <pre>
+      <code className="css">{`
 hgroup, h1, h2, h3, h4, *.heading {
   font-family: 'Berkshire Swash';
 }
@@ -26,7 +25,8 @@ code, pre, samp {
   font-family: 'VT323';
   font-size: 1.62rem;
 }
-    `}</code></pre>
+    `}</code>
+    </pre>
   </article>
 )
 
