@@ -1,0 +1,66 @@
+{
+  /* coc */
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascript.jsx",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "css",
+    "scss",
+    "yaml",
+    "yml",
+    "markdown",
+    "mkd",
+    "md"
+  ],
+  "coc.preferences.bracketEnterImprove": true,
+  "coc.preferences.rootPatterns": ["jsconfig.json", "package.json"],
+
+  /* suggestions */
+  "suggest.numberSelect": true,
+
+  /* snippets */
+
+  /* coc-prettier */
+  "prettier.eslintIntegration": true,
+  "prettier.onlyUseLocalVersion": true,
+  "prettier.stylelintIntegration": false,
+  "prettier.disableSuccessMessage": true,
+
+  /* coc-eslint */
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": [
+    "javascript",
+    "javascript.jsx",
+    "javascriptreact",
+    "typescript",
+    "typescript.tsx",
+    "typescriptreact"
+  ],
+  "eslint.run": "onSave",
+  "eslint.options": {
+    "rules": {
+      "eol-last": 0,
+      "prettier/prettier": 1
+    }
+  },
+  "eslint.packageManager": "yarn",
+  /* "eslint.trace.server": "verbose", */
+
+  /* stylelintplus */
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "wxss.validate": false,
+
+  "stylelintplus.enable": true,
+  "stylelintplus.validateOnSave": true,
+  "stylelintplus.autoFixOnSave": true,
+  "stylelintplus.autoFixOnFormat": true
+
+  /* tsserver */
+  /* "tsserver.log": "verbose", */
+  /* "tsserver.trace.server": "verbose" */
+}
