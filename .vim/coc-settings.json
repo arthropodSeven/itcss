@@ -25,7 +25,6 @@
   /* coc-prettier */
   "prettier.eslintIntegration": true,
   "prettier.onlyUseLocalVersion": true,
-  "prettier.stylelintIntegration": true,
   "prettier.disableSuccessMessage": true,
 
   /* coc-eslint */
@@ -51,14 +50,14 @@
 
   /* stylelintplus */
   "css.validate": false,
-  "less.validate": false,
+  /* "less.validate": false, */
   "scss.validate": false,
-  "wxss.validate": false,
+  /* "wxss.validate": false, */
 
-  "stylelintplus.enable": true,
-  "stylelintplus.validateOnSave": true,
-  "stylelintplus.autoFixOnSave": true,
-  "stylelintplus.autoFixOnFormat": true
+  "stylelintplus.enable": false,
+  "stylelintplus.validateOnSave": false,
+  "stylelintplus.autoFixOnSave": false
+  /* "stylelintplus.autoFixOnFormat": false */
 
   /* tsserver */
   /* "tsserver.log": "verbose", */
