@@ -39,13 +39,6 @@ function MyApp(props) {
 
   useEffect(() => {
     highlightCallback()
-    router.events.on('routeChangeComplete', highlightCallback)
-    router.events.on('hashChangeComplete', highlightCallback)
-
-    return () => {
-      router.events.off('routeChangeComplete', highlightCallback)
-      router.events.off('hashChangeComplete', highlightCallback)
-    }
   }, [])
 
   return <Component {...pageProps} />

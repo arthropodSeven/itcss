@@ -8,8 +8,8 @@ const ColorPage = () => (
     </Head>
 
     <section className="color-demo">
-      {new Array(5).fill(null).map(() => (
-        <div />
+      {new Array(5).fill(null).map((_, idx) => (
+        <div key={`color-demo-${idx}`} />
       ))}
     </section>
 

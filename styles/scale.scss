@@ -7,8 +7,8 @@ $scale-powers: -5 -4 -3 -2 -1 0 1 2 3 4 5;
 
   @each $power in $scale-powers {
     // unitless
-    --x#{$power}: math.pow(1.618, $power);
+    --x#{$power}: #{math.pow(1.618, $power)};
     // lengths
-    --s#{$power}: calc(math.pow(1.618, $power) * 1rem);
+    --s#{$power}: calc(#{math.pow(1.618, $power)} * 1rem);
   }
 }

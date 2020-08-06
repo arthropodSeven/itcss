@@ -19,3 +19,37 @@
 
   text-shadow: 0.5px 0.25px 6px currentColor;
 }
+
+$shaderefs: [ 'q' 1, 'w' 2, 'e' 3, 'r' 4, 't' 5, ];
+
+.color-page {
+  pre {
+    width: 100%;
+
+    code {
+      margin: var(--s2) var(--s1);
+    }
+  }
+
+  section.color-demo {
+    display: flex;
+
+    justify-content: space-evenly;
+
+    padding-top: var(--s3);
+    padding-bottom: var(--s3);
+
+    & > div {
+      width: var(--s4);
+      height: var(--s4);
+
+      content: ' ';
+
+      @each $ref, $index in $shaderefs {
+        &:nth-child(#{$index}) {
+          background: var(--#{$ref}-shade);
+        }
+      }
+    }
+  }
+}

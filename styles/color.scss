@@ -2,13 +2,13 @@ $shades: [ 'q-shade' 'russian-violet' rgba(35, 25, 66, 1),
   'w-shade' 'purple-navy' rgba(94, 84, 142, 1),
   'e-shade' 'purple-mountain-majesty' rgba(159, 134, 192, 1),
   'r-shade' 'lilac' rgba(190, 149, 196, 1),
-  't-shade' 'pink-lavender' rgba(224, 177, 203, 1) ];
+  't-shade' 'pink-lavender' rgba(224, 177, 203, 1), ];
 
 :root {
   --__orgin: 'styles/color';
 
   @each $sidx, $sname, $srgba in $shades {
-    --#{$sname}: $srgba;
+    --#{$sname}: #{$srgba};
     --#{$sidx}: var(--#{$sname});
   }
 }
