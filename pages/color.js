@@ -19,6 +19,7 @@ const ColorPage = () => (
         <div key={shadeIdx} data-pal={shadeIdx}>
           <span>{`fill: --${shadeIdx}-shade`}</span>
           <span>{`text: --${shadeIdx}-text`}</span>
+          <strong>{`highlight: --${shadeIdx}-hi`}</strong>
         </div>
       ))}
     </section>
@@ -36,6 +37,7 @@ const ColorPage = () => (
         <div key={shadeIdx} data-pal={shadeIdx} data-pal-scheme="invert">
           <span>{`fill: --${shadeIdx}-text`}</span>
           <span>{`text: --${shadeIdx}-shade`}</span>
+          <strong>{`highlight: --${shadeIdx}-hi`}</strong>
         </div>
       ))}
     </section>
