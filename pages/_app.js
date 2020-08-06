@@ -39,7 +39,7 @@ function MyApp(props) {
 
   useEffect(() => {
     highlightCallback()
-  }, [])
+  })
 
   return <Component {...pageProps} />
 }
