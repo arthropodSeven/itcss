@@ -1,0 +1,27 @@
+{
+  "plugins": ["stylelint-scss"],
+  "extends": ["stylelint-config-standard", "stylelint-config-hudochenkov"],
+  "rules": {
+    "indentation": 2,
+    "at-rule-no-unknown": null,
+    "declaration-block-no-shorthand-property-overrides": [
+      true,
+      {
+        "severity": "error",
+        "message": "use longhand form"
+      }
+    ],
+    "selector-max-type": null,
+    "selector-no-qualifying-type": null,
+
+    "scss/at-rule-no-unknown": true,
+    "scss/dollar-variable-no-missing-interpolation": true,
+    "scss/dollar-variable-colon-newline-after": "always-multi-line",
+    "scss/selector-no-redundant-nesting-selector": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ]
+  }
+}
