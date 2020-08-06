@@ -13,7 +13,7 @@ code {
   padding: var(--s1) var(--s4);
 }
 
-$shaderefs: [ "q" 1, "w" 2, "e" 3, "r" 4, "t" 5, ];
+$shaderefs: 'q' 1, 'w' 2, 'e' 3, 'r' 4, 't' 5;
 
 .color-page {
   section.color-demo {
@@ -22,18 +22,19 @@ $shaderefs: [ "q" 1, "w" 2, "e" 3, "r" 4, "t" 5, ];
     padding-top: var(--s3);
     padding-bottom: var(--s3);
 
-    & > div {
+    > div {
       width: var(--s5);
       height: var(--s5);
       display: flex;
       flex-direction: column;
       place-content: center center;
       text-align: center;
-      font-size: x-large;
+      font-size: large;
 
       @each $ref, $index in $shaderefs {
         &:nth-child(#{$index}) {
           background: var(--#{$ref}-shade);
+          color: var(--#{$ref}-text);
         }
       }
     }

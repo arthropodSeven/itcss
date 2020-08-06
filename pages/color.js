@@ -12,7 +12,8 @@ const ColorPage = () => (
     <section className="color-demo">
       {['q', 'w', 'e', 'r', 't'].map((shadeIdx, idx) => (
         <div key={`color-demo-${shadeIdx}`}>
-          <p>{`${shadeIdx}-shade`}</p>
+          <span>{`--${shadeIdx}-shade`}</span>
+          <span>{`(text: --${shadeIdx}-text)`}</span>
         </div>
       ))}
     </section>
