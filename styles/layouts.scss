@@ -3,6 +3,10 @@
   width: 100vw;
   padding: 16ch;
   background: antiquewhite;
+
+  > * + * {
+    margin-top: var(--s1);
+  }
 }
 
 pre {
@@ -10,17 +14,28 @@ pre {
 }
 
 code {
+  padding-inline: var(--s-3);
+  padding-block: var(--s-2);
+  margin-inline: var(--s-4);
+}
+
+pre > code {
   padding: var(--s1) var(--s4);
 }
 
-$shaderefs: 'q' 1, 'w' 2, 'e' 3, 'r' 4, 't' 5;
-
 .color-page {
+  > * + * {
+    margin-top: var(--s1);
+  }
+
   section.color-demo {
     display: flex;
     justify-content: space-evenly;
     padding-top: var(--s3);
     padding-bottom: var(--s3);
+    border: 1px solid black;
+    margin-left: var(--s3);
+    margin-right: var(--s3);
 
     > div {
       width: var(--s5);
@@ -30,13 +45,6 @@ $shaderefs: 'q' 1, 'w' 2, 'e' 3, 'r' 4, 't' 5;
       place-content: center center;
       text-align: center;
       font-size: large;
-
-      @each $ref, $index in $shaderefs {
-        &:nth-child(#{$index}) {
-          background: var(--#{$ref}-shade);
-          color: var(--#{$ref}-text);
-        }
-      }
     }
   }
 }
