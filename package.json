@@ -13,6 +13,7 @@
     "normalize.css": "^8.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "sass": "^1.26.10",
     "typeface-berkshire-swash": "^0.0.72",
     "typeface-cooper-hewitt": "^0.0.44",
     "typeface-libre-franklin": "^0.0.75",
@@ -21,6 +22,12 @@
   "devDependencies": {
     "@types/node": "^14.0.27",
     "@types/react": "^16.9.44",
+    "eslint": "^7.6.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-typescript": "^0.14.0",
+    "prettier": "^2.0.5",
+    "prettier-plugin-eslint": "^1.0.2",
     "typescript": "^3.9.7"
   }
 }
