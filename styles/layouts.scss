@@ -1,54 +1,38 @@
 .code-page {
   height: 100vh;
   width: 100vw;
-
   padding: 16ch;
-
   background: antiquewhite;
 }
 
-.code-page pre {
-  max-width: 80ch;
+pre {
+  width: 100%;
 }
 
-.code-page pre > code {
-  margin: -2ch -4ch;
-  padding: 2ch 4ch;
-
-  outline: solid 1ch coral;
-
-  text-shadow: 0.5px 0.25px 6px currentColor;
+code {
+  padding: var(--s1) var(--s4);
 }
 
-$shaderefs: [ 'q' 1, 'w' 2, 'e' 3, 'r' 4, 't' 5, ];
+$shaderefs: [ "q" 1, "w" 2, "e" 3, "r" 4, "t" 5, ];
 
 .color-page {
-  pre {
-    width: 100%;
-
-    code {
-      margin: var(--s2) var(--s1);
-    }
-  }
-
   section.color-demo {
     display: flex;
-
     justify-content: space-evenly;
-
     padding-top: var(--s3);
     padding-bottom: var(--s3);
 
     & > div {
       width: var(--s5);
       height: var(--s5);
+      display: flex;
+      flex-direction: column;
+      place-content: center center;
+      text-align: center;
+      font-size: x-large;
 
       @each $ref, $index in $shaderefs {
-        $content: '--#{$ref}-shade';
-
         &:nth-child(#{$index}) {
-          color: white;
-          content: '#{$content}';
           background: var(--#{$ref}-shade);
         }
       }
