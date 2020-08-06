@@ -23,6 +23,7 @@
   /* snippets */
 
   /* coc-prettier */
+  "prettier.requireConfig": true,
   "prettier.eslintIntegration": true,
   "prettier.onlyUseLocalVersion": true,
   "prettier.disableSuccessMessage": true,
