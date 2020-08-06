@@ -8,7 +8,7 @@ $shades: 'q' 1 'russian-violet' hsla(255, 45%, 18%, 1),
   't' 5 'pink-lavender' hsla(327, 43%, 79%, 1);
 
 :root {
-  --__orgin: 'styles/color';
+  --__origin: 'styles/color';
 
   @each $sid, $sidx, $sname, $hsla in $shades {
     $lightmod: math.percentage(0.7 + ($sidx * 0.06));
@@ -22,4 +22,30 @@ $shades: 'q' 1 'russian-violet' hsla(255, 45%, 18%, 1),
     --#{$sid}-shade: var(--#{$sname});
     --#{$sid}-text: var(--#{$sname}__text);
   }
+}
+
+@each $sid, $sidx, $sname, $hsla in $shades {
+  // palette selectors
+  .pal-#{$sid},
+  .pal-#{$sidx},
+  .#{$sname},
+  [data-pal="#{$sid}"],
+  [data-pal="#{$sidx}"]
+  [data-pal="#{$sname}"] {
+    --fill-color: var(--#{$sid}-shade);
+    --text-color: var(--#{$sid}-text);
+  }
+}
+
+[data-pal],
+.pal-standard,
+[data-pal-scheme="standard"] {
+  background: var(--fill-color);
+  color: var(--text-color);
+}
+
+.pal-invert,
+[data-pal-scheme="invert"] {
+  background: var(--text-color);
+  color: var(--fill-color);
 }
