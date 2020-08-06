@@ -1,14 +1,17 @@
-$shades: [ 'q-shade' 'russian-violet' rgba(35, 25, 66, 1),
-  'w-shade' 'purple-navy' rgba(94, 84, 142, 1),
-  'e-shade' 'purple-mountain-majesty' rgba(159, 134, 192, 1),
-  'r-shade' 'lilac' rgba(190, 149, 196, 1),
-  't-shade' 'pink-lavender' rgba(224, 177, 203, 1), ];
+@use "sass:color";
+
+$shades:
+  [ "q" "russian-violet" hsla(255, 45%, 18%, 1),
+  "w" "purple-navy" hsla(250, 26%, 44%, 1),
+  "e" "purple-mountain-majesty" hsla(266, 32%, 64%, 1),
+  "r" "lilac" hsla(292, 28%, 68%, 1),
+  "t" "pink-lavender" hsla(327, 43%, 79%, 1) ];
 
 :root {
-  --__orgin: 'styles/color';
+  --__orgin: "styles/color";
 
-  @each $sidx, $sname, $srgba in $shades {
-    --#{$sname}: #{$srgba};
-    --#{$sidx}: var(--#{$sname});
+  @each $sidx, $sname, $shsla in $shades {
+    --#{$sname}: #{$shsla};
+    --#{$sidx}-shade: var(--#{$sname});
   }
 }
