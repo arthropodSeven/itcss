@@ -10,8 +10,10 @@ const ColorPage = () => (
     <h1>{'Color Demo (hacked by Andrew)'}</h1>
 
     <section className="color-demo">
-      {new Array(5).fill(null).map((_, idx) => (
-        <div key={`color-demo-${idx}`} />
+      {['q', 'w', 'e', 'r', 't'].map((shadeIdx, idx) => (
+        <div key={`color-demo-${shadeIdx}`}>
+          <p>{`${shadeIdx}-shade`}</p>
+        </div>
       ))}
     </section>
 
