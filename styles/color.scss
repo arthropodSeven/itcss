@@ -11,16 +11,30 @@ $shades: 'q' 1 'russian-violet' hsla(255, 45%, 18%, 1),
   --__origin: 'styles/color';
 
   @each $sid, $sidx, $sname, $hsla in $shades {
-    $lightmod: math.percentage(0.7 + ($sidx * 0.06));
-    $textcolor: color.change(
-      color.scale($hsla, $saturation: -70%),
-      $lightness: $lightmod
-    );
+    $fillcolor: $hsla;
+    $fill-highlight: color.change($fillcolor, $lightness: +30%);
 
-    --#{$sname}: #{$hsla};
+    $textcolor: color.change(
+      color.scale($fillcolor, $saturation: -60%),
+      $lightness: math.percentage(0.65 + ($sidx * 0.065))
+    );
+    $text-highlight: color.change($textcolor, $saturation: +30%);
+
+    // named fill + highlight
+    --#{$sname}: #{$fillcolor};
+    --#{$sname}-highlight: #{$fill-highlight};
+
+    // named text + highlight
     --#{$sname}__text: #{$textcolor};
-    --#{$sid}-shade: var(--#{$sname});
+    --#{$sname}__text-highlight: #{$text-highlight};
+
+    // identifier fill + highlight
+    --#{$sid}-fill: var(--#{$sname});
+    --#{$sid}-fill-hi: var(--#{$sname}-highlight);
+
+    // identifier text + highlight
     --#{$sid}-text: var(--#{$sname}__text);
+    --#{$sid}-text-hi: var(--#{$sname}__text-highlight);
   }
 }
 
@@ -29,23 +43,37 @@ $shades: 'q' 1 'russian-violet' hsla(255, 45%, 18%, 1),
   .pal-#{$sid},
   .pal-#{$sidx},
   .#{$sname},
-  [data-pal="#{$sid}"],
-  [data-pal="#{$sidx}"]
-  [data-pal="#{$sname}"] {
-    --fill-color: var(--#{$sid}-shade);
+  [data-pal='#{$sid}'],
+  [data-pal='#{$sidx}'] [data-pal='#{$sname}'] {
+    --fill-color: var(--#{$sid}-fill);
     --text-color: var(--#{$sid}-text);
+    --text-hi: var(--#{$sid}-text-hi);
   }
 }
 
 [data-pal],
 .pal-standard,
-[data-pal-scheme="standard"] {
+[data-pal-scheme='standard'] {
   background: var(--fill-color);
   color: var(--text-color);
+
+  em,
+  b,
+  strong,
+  .highlight {
+    color: var(--text-hi);
+  }
 }
 
 .pal-invert,
-[data-pal-scheme="invert"] {
+[data-pal-scheme='invert'] {
   background: var(--text-color);
   color: var(--fill-color);
+
+  em,
+  b,
+  strong,
+  .highlight {
+    color: var(--fill-hi);
+  }
 }
