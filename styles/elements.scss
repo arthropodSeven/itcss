@@ -9,5 +9,9 @@ code {
 }
 
 pre > code {
+  padding-inline: unset;
+  padding-block: unset;
+  margin-inline: unset;
+
   padding: var(--s1) var(--s4);
 }
