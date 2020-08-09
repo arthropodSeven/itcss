@@ -9,7 +9,8 @@ const ColorPage = () => (
       <link rel="icon" href="favicon.ico" />
     </Head>
 
-    <h1>{'Color Demo (hacked by Andrew)'}</h1>
+    <h1>{'Color Demo'}</h1>
+    <h2>{'Hacked by Andrew'}</h2>
 
     <p>
       {"Since this is a prototype, I've restricted myself to monochrome "}
@@ -39,9 +40,10 @@ const ColorPage = () => (
     <p>
       {'These divs have the same'}
       <code>{'data-pal'}</code>
-      {'values, and the container has an additional'}
+      {'values, and the container has'}
       <code>{'[data-pal-scheme="invert"]'}</code>
-      {'to control how the palette is used.'}
+      {"\u2014the palette is the same, but the scheme by which it's "}
+      {'applied is different.'}
     </p>
 
     <section className="color-demo" data-pal-scheme="invert">
