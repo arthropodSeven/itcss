@@ -54,7 +54,10 @@ const ColorPage = () => (
       ))}
     </section>
 
-    <Highlighter language="scss" style={paraisoDark}>{`
+    <Highlighter
+      language="scss"
+      style={paraisoDark}
+      customStyle={{ overflowX: 'none' }}>{`
 .color-page {
   > * + * {
     margin-top: var(--s1);
