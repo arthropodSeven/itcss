@@ -13,6 +13,7 @@
     "normalize.css": "^8.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-syntax-highlighter": "^13.2.1",
     "sass": "^1.26.10",
     "typeface-berkshire-swash": "^0.0.72",
     "typeface-cooper-hewitt": "^0.0.44",
