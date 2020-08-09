@@ -3,7 +3,7 @@ import Head from 'next/head'
 const ColorPage = () => (
   <article className="color-page">
     <Head>
-      <title>{'Color Demo'}</title>
+      <title>{'Styling Demo - /colors'}</title>
       <link rel="icon" href="favicon.ico" />
     </Head>
 
