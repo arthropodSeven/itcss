@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 const ColorPage = () => (
-  <article className="color-page">
+  <article className="color-page" id="home">
     <Head>
       <title>{'Styling Demo - /colors'}</title>
       <link rel="icon" href="favicon.ico" />
@@ -17,9 +17,9 @@ const ColorPage = () => (
     <section className="color-demo">
       {['q', 'w', 'e', 'r', 't'].map((shadeIdx, idx) => (
         <div key={shadeIdx} data-pal={shadeIdx}>
-          <span>{`fill: --${shadeIdx}-shade`}</span>
+          <span>{`fill: --${shadeIdx}-fill`}</span>
           <span>{`text: --${shadeIdx}-text`}</span>
-          <strong>{`highlight: --${shadeIdx}-hi`}</strong>
+          <strong>{`highlight: --${shadeIdx}-text-hi`}</strong>
         </div>
       ))}
     </section>
@@ -27,17 +27,17 @@ const ColorPage = () => (
     <p>
       {'These divs have the same'}
       <code>{'data-pal'}</code>
-      {'values, and an additional'}
+      {'values, and the container has an additional'}
       <code>{'[data-pal-scheme="invert"]'}</code>
       {'to control how the palette is used.'}
     </p>
 
-    <section className="color-demo">
+    <section className="color-demo" data-pal-scheme="invert">
       {['q', 'w', 'e', 'r', 't'].map((shadeIdx, idx) => (
-        <div key={shadeIdx} data-pal={shadeIdx} data-pal-scheme="invert">
+        <div key={shadeIdx} data-pal={shadeIdx}>
           <span>{`fill: --${shadeIdx}-text`}</span>
-          <span>{`text: --${shadeIdx}-shade`}</span>
-          <strong>{`highlight: --${shadeIdx}-hi`}</strong>
+          <span>{`text: --${shadeIdx}-fill`}</span>
+          <strong>{`highlight: --${shadeIdx}-fill-hi`}</strong>
         </div>
       ))}
     </section>
