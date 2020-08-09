@@ -22,11 +22,13 @@ const ColorPage = () => (
     <p>
       {'These divs have a'}
       <code>{'[data-pal]'}</code>
-      {'attribute to select a palette.'}
+      {'attribute to select a palette, and a'}
+      <code>{'[data-pal-scheme]'}</code>
+      {'attribute which determines how the palette is applied.'}
     </p>
     <section className="color-demo">
       {['q', 'w', 'e', 'r', 't'].map((shadeIdx, idx) => (
-        <div key={shadeIdx} data-pal={shadeIdx}>
+        <div key={shadeIdx} data-pal={shadeIdx} data-pal-scheme="standard">
           <span>{`fill: --${shadeIdx}-fill`}</span>
           <span>{`text: --${shadeIdx}-text`}</span>
           <strong>{`highlight: --${shadeIdx}-text-hi`}</strong>
