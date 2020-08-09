@@ -52,8 +52,11 @@ $shades: 'q' 1 'russian-violet' hsla(255, 45%, 18%, 1),
 }
 
 [data-pal],
+[data-pal] *,
 .pal-standard,
-[data-pal-scheme='standard'] {
+.pal-standard *,
+[data-pal-scheme='standard'],
+[data-pal-scheme='standard'] * {
   background: var(--fill-color);
   color: var(--text-color);
 
@@ -66,7 +69,9 @@ $shades: 'q' 1 'russian-violet' hsla(255, 45%, 18%, 1),
 }
 
 .pal-invert,
-[data-pal-scheme='invert'] {
+.pal-invert *,
+[data-pal-scheme='invert'],
+[data-pal-scheme='invert'] * {
   background: var(--text-color);
   color: var(--fill-color);
 
