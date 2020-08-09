@@ -1,0 +1,13 @@
+pre {
+  width: 100%;
+}
+
+code {
+  padding-inline: var(--s-3);
+  padding-block: var(--s-2);
+  margin-inline: var(--s-4);
+}
+
+pre > code {
+  padding: var(--s1) var(--s4);
+}
