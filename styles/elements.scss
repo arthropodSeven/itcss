@@ -3,8 +3,10 @@ pre {
 }
 
 code {
+  font-size: smaller;
+
   padding-inline: var(--s-3);
-  padding-block: var(--s-2);
+  padding-block: 0.1ex;
   margin-inline: var(--s-4);
 }
 
