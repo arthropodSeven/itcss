@@ -10,17 +10,87 @@ code {
   margin-inline: var(--s-4);
 }
 
-button {
-  background: unset;
+p.evil {
+  font-size: x-large;
+  font-style: italic;
+}
 
+p.stage {
+  font-family: 'Victor Mono', 'Courier New', Courier, monospace;
+  text-align: center;
+
+  padding: var(--s-2);
+
+  border: 1pt dashed currentColor;
+}
+
+p.pm {
+  align-self: flex-end;
+
+  margin: var(--s1) 0;
+  padding: 0 var(--s1);
+  text-align: right;
+
+  font-family: 'Cooper Hewitt';
+  font-size: larger;
+  font-style: italic;
+
+  border-right: 1ch solid lightgrey;
+}
+
+.og-styles {
+  button {
+    background: white;
+    color: black;
+    padding: 1.25ex;
+    border: 0.3ch solid currentColor;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.03);
+    }
+    &:hover {
+      cursor: pointer;
+
+      border-style: double;
+    }
+    &:focus {
+      outline: 0.5ch solid lightgrey;
+    }
+    &:active {
+      transform: unset;
+    }
+  }
+
+  button.action {
+    color: mediumseagreen;
+  }
+
+  button.destructive {
+    color: lightcoral;
+  }
+
+  button.warning {
+    color: sandybrown;
+  }
+}
+button.new {
+  border: none;
+  border-radius: 0.5ch;
+  color: white;
+  background: plum;
   padding: 1.25ex;
 
-  border: 0.3ch solid black;
-
+  &:hover,
+  &:focus {
+    transform-origin: center;
+    transform: scale(1.03);
+    filter: opacity(0.85);
+  }
   &:hover {
     cursor: pointer;
-
-    background: black;
-    --text-color: white;
+  }
+  &:active {
+    filter: brightness(0.85);
   }
 }

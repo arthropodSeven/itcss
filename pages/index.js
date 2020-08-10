@@ -6,10 +6,7 @@ import Highlight from "react-syntax-highlighter"
 import paraisoDark from "react-syntax-highlighter/dist/cjs/styles/hljs/dark"
 
 const Home = () => (
-  <article
-    className="text-page"
-    data-layout="standard"
-    data-pal-scheme="standard">
+  <article className="text-page" data-layout="standard">
     <Head>
       <title>{"Styling Demo - Home"}</title>
       <link rel="icon" href="favicon.ico" />
@@ -71,6 +68,12 @@ h4 {
       write a paragraph, that the font for that element is Libre Franklin. You
       can just write a <code>{"<p>"}</code>, and you get the rest for free.
     </p>
+
+    <Link href="page6">
+      <a className="left">
+        <h2>TL;DR</h2>
+      </a>
+    </Link>
 
     <Link href="page2">
       <a className="right">

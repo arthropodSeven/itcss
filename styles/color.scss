@@ -82,3 +82,17 @@ $shades: 'q' 1 'russian-violet' hsla(255, 45%, 18%, 1),
     color: var(--fill-hi);
   }
 }
+
+.pal-unset,
+[data-pal-scheme='unset'],
+[data-pal-scheme='unset'] * {
+  background: initial;
+  color: initial;
+
+  em,
+  b,
+  strong,
+  .highlight {
+    color: initial;
+  }
+}

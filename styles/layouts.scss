@@ -39,12 +39,14 @@
 
     place-self: center center;
 
-    margin-bottom: unset;
+    margin: var(--s2);
   }
   > .right {
     grid-column-start: -3;
     grid-column-end: content-end;
 
     place-self: center center;
+
+    margin: var(--s2);
   }
 }
