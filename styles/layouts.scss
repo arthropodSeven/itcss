@@ -36,7 +36,7 @@
   }
 }
 
-#home {
+[data-layout='standard'] {
   display: grid;
 
   // $grid-column-gap: calc(min((13 / 15) * 100vw, #{$grid-max-width}) / 13 / 11);

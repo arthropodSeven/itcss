@@ -3,7 +3,7 @@ import Highlighter from 'react-syntax-highlighter'
 import paraisoDark from 'react-syntax-highlighter/dist/cjs/styles/hljs/paraiso-dark'
 
 const ColorPage = () => (
-  <article className="color-page" id="home">
+  <article className="color-page" data-layout="standard">
     <Head>
       <title>{'Styling Demo - /colors'}</title>
       <link rel="icon" href="favicon.ico" />
