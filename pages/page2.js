@@ -23,7 +23,7 @@ const PageTwo = () => (
       got really crazy and added buttons!
     </p>
 
-    <div className="spread" data-pal-scheme="unset">
+    <div className="spread og-styles">
       <button>Button!</button>
     </div>
 
@@ -75,7 +75,7 @@ button:active {
       from other elements of the same type.
     </p>
 
-    <div className="spread">
+    <div className="spread og-styles">
       <button>Normal button!</button>
       <button className="action">Helpful button!</button>
       <button className="destructive">Destructive button!</button>

@@ -16,8 +16,6 @@ const PageFive = () => (
       <h2>Page 5</h2>
     </hgroup>
 
-    <p>Here's the key thing to remember:</p>
-
     <p>
       On the left is the old default button. On the right is the new default
       button.
@@ -29,6 +27,8 @@ const PageFive = () => (
       </div>
       <button className="new">Button!</button>
     </div>
+
+    <p>Here's the key thing to remember:</p>
 
     <p>
       <em>These are the same button.</em> They're both{" "}
