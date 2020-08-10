@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Highlighter from 'react-syntax-highlighter'
-import { paraisoDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import paraisoDark from 'react-syntax-highlighter/dist/cjs/styles/hljs/paraiso-dark'
 
 const ColorPage = () => (
   <article className="color-page" id="home">
