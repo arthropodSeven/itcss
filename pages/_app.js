@@ -22,6 +22,7 @@ import "victormono"
 import "styles/core.scss"
 import "styles/globals.scss"
 import "styles/layouts.scss"
+import "styles/pages.scss"
 
 // hljs.registerLanguage('javascript', javascript)
 // hljs.registerLanguage('css', css)
