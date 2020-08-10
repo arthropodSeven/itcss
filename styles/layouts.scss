@@ -1,4 +1,4 @@
-[data-layout='standard'] {
+[data-layout="standard"] {
   margin-top: 5rem;
   margin-bottom: 5rem;
 
@@ -21,10 +21,8 @@
   }
 
   > .spread {
-    grid-column-start: 1;
-    grid-column-end: -1;
-
     display: flex;
+    flex-wrap: wrap;
 
     justify-content: space-evenly;
 
