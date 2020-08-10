@@ -11,12 +11,19 @@
   grid-template-columns:
     var(--padding-column-width)
     [content-start]
-    repeat(7, auto)
+    repeat(7, 1fr)
     [content-end]
     var(--padding-column-width);
 
   > * {
     grid-column-start: content-start;
     grid-column-end: content-end;
+  }
+
+  > .right {
+    grid-column-start: -3;
+    grid-column-end: content-end;
+
+    place-self: center center;
   }
 }
