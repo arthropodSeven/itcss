@@ -21,6 +21,12 @@ h4,
     'Times New Roman', serif;
 }
 
+hgroup > * + * {
+  margin-top: 1rem;
+  color: grey;
+  --text-color: grey;
+}
+
 code {
   font-family: 'Victor Mono';
   letter-spacing: 0.05rem;

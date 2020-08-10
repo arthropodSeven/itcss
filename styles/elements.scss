@@ -11,4 +11,16 @@ code {
 }
 
 button {
+  background: unset;
+
+  padding: 1.25ex;
+
+  border: 0.3ch solid black;
+
+  &:hover {
+    cursor: pointer;
+
+    background: black;
+    --text-color: white;
+  }
 }

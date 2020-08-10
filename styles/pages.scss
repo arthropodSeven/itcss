@@ -5,7 +5,7 @@
     max-width: 80ch;
   }
 
-  > *:not(:last-child) {
+  > *:not(:last-child):not(.left):not(.right) {
     margin-bottom: 1em;
   }
 }
