@@ -1,34 +1,34 @@
-import Head from 'next/head'
-import Highlighter from 'react-syntax-highlighter'
-import paraisoDark from 'react-syntax-highlighter/dist/cjs/styles/hljs/paraiso-dark'
+import Head from "next/head"
+import Highlighter from "react-syntax-highlighter"
+import paraisoDark from "react-syntax-highlighter/dist/cjs/styles/hljs/paraiso-dark"
 
 const ColorPage = () => (
   <article className="color-page" data-layout="standard">
     <Head>
-      <title>{'Styling Demo - /colors'}</title>
+      <title>{"Styling Demo - /colors"}</title>
       <link rel="icon" href="favicon.ico" />
     </Head>
 
-    <h1>{'Color Demo'}</h1>
-    <h2>{'Hacked by Andrew'}</h2>
+    <h1>{"Color Demo"}</h1>
+    <h2>{"Hacked by Andrew"}</h2>
 
     <p>
       {"Since this is a prototype, I've restricted myself to monochrome "}
       {"colorschemes. It's convenient because I can use sass builtins to "}
-      {'derive secondary colors: '}
-      <a href="#generating-colors">{'See below'}</a>
-      {'.'}
+      {"derive secondary colors: "}
+      <a href="#generating-colors">{"See below"}</a>
+      {"."}
     </p>
 
     <p>
-      {'These divs have a'}
-      <code>{'[data-pal]'}</code>
-      {'attribute to select a palette, and a'}
-      <code>{'[data-pal-scheme]'}</code>
-      {'attribute which determines how the palette is applied.'}
+      {"These divs have a"}
+      <code>{"[data-pal]"}</code>
+      {"attribute to select a palette, and a"}
+      <code>{"[data-pal-scheme]"}</code>
+      {"attribute which determines how the palette is applied."}
     </p>
     <section className="color-demo">
-      {['q', 'w', 'e', 'r', 't'].map((shadeIdx, idx) => (
+      {["q", "w", "e", "r", "t"].map((shadeIdx, idx) => (
         <div key={shadeIdx} data-pal={shadeIdx} data-pal-scheme="standard">
           <span>{`fill: --${shadeIdx}-fill`}</span>
           <span>{`text: --${shadeIdx}-text`}</span>
@@ -38,16 +38,16 @@ const ColorPage = () => (
     </section>
 
     <p>
-      {'These divs have the same'}
-      <code>{'data-pal'}</code>
-      {'values, and the container has'}
-      <code>{'[data-pal-scheme="invert"]'}</code>
+      {"These divs have the same"}
+      <code>{"data-pal"}</code>
+      {"values, and the container has"}
+      <code>{"[data-pal-scheme=\"invert\"]"}</code>
       {"\u2014the palette is the same, but the scheme by which it's "}
-      {'applied is different.'}
+      {"applied is different."}
     </p>
 
     <section className="color-demo" data-pal-scheme="invert">
-      {['q', 'w', 'e', 'r', 't'].map((shadeIdx, idx) => (
+      {["q", "w", "e", "r", "t"].map((shadeIdx, idx) => (
         <div key={shadeIdx} data-pal={shadeIdx}>
           <span>{`fill: --${shadeIdx}-text`}</span>
           <span>{`text: --${shadeIdx}-fill`}</span>
@@ -59,7 +59,7 @@ const ColorPage = () => (
     <Highlighter
       language="scss"
       style={paraisoDark}
-      customStyle={{ overflowX: 'none' }}>{`
+      customStyle={{ overflowX: "none" }}>{`
 .color-page {
   > * + * {
     margin-top: var(--s1);
@@ -87,17 +87,17 @@ const ColorPage = () => (
 }
     `}</Highlighter>
 
-    <h2 id="generating-colors">{'Generating Colors'}</h2>
+    <h2 id="generating-colors">{"Generating Colors"}</h2>
 
     <p>
-      {'See below for the code that generates these colorschemes from a '}
-      {'basic monochrome palette.'}
+      {"See below for the code that generates these colorschemes from a "}
+      {"basic monochrome palette."}
     </p>
 
     <Highlighter
       language="scss"
       style={paraisoDark}
-      customStyle={{ overflowX: 'none' }}>{`
+      customStyle={{ overflowX: "none" }}>{`
 @use "sass:color";
 @use "sass:math";
 

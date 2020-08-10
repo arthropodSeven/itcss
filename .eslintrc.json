@@ -22,9 +22,14 @@
   },
   "rules": {
     "prettier/prettier": "error",
+    "quotes": ["error", "double"],
     "react/react-in-jsx-scope": 0,
     "react/display-name": 0,
     "react/prop-types": 0,
+    "react/jsx-curly-brace-presence": [
+      1,
+      { "children": "always", "props": "never" }
+    ],
     "no-console": [
       2,
       {

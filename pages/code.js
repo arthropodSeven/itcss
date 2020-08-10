@@ -1,14 +1,14 @@
-import Head from 'next/head'
+import Head from "next/head"
 
 const CodePage = () => (
   <article className="code-page">
     <Head>
-      <title>{'Code (Hacked By Andrew)'}</title>
+      <title>{"Code (Hacked By Andrew)"}</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <div>
-      <h1 style={{ marginBottom: '2em' }}>{'Hacked By Andrew'}</h1>
+      <h1 style={{ marginBottom: "2em" }}>{"Hacked By Andrew"}</h1>
     </div>
 
     <pre>
