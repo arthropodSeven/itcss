@@ -39,20 +39,23 @@ $shades: 'q' 1 'russian-violet' hsla(255, 45%, 18%, 1),
 }
 
 @each $sid, $sidx, $sname, $hsla in $shades {
-  // palette selectors
+  // classnames apply palette to this element
   .pal-#{$sid},
   .pal-#{$sidx},
   .#{$sname},
-  [data-pal='#{$sid}'],
-  [data-pal='#{$sidx}'] [data-pal='#{$sname}'] {
+  // data-pal applies palette to this element and all its children
+  [data-pal='#{$sid}'], [data-pal='#{$sid}'] *,
+  [data-pal='#{$sidx}'], [data-pal='#{$sidx}'] *,
+  [data-pal='#{$sname}'], [data-pal='#{$sname}'] * {
     --fill-color: var(--#{$sid}-fill);
     --text-color: var(--#{$sid}-text);
     --text-hi: var(--#{$sid}-text-hi);
   }
 }
 
+// classname applies palette scheme to this element
 .pal-standard,
-.pal-standard *,
+// data-pal-scheme is recursive
 [data-pal-scheme='standard'],
 [data-pal-scheme='standard'] * {
   background: var(--fill-color);
@@ -67,7 +70,6 @@ $shades: 'q' 1 'russian-violet' hsla(255, 45%, 18%, 1),
 }
 
 .pal-invert,
-.pal-invert *,
 [data-pal-scheme='invert'],
 [data-pal-scheme='invert'] * {
   background: var(--text-color);
