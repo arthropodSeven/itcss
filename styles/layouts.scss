@@ -49,12 +49,12 @@
   grid-template-columns:
     var(--padding-column-width)
     [content-start]
-    auto
+    repeat(7, auto)
     [content-end]
     var(--padding-column-width);
 
   > * {
-    grid-column-start: content;
+    grid-column-start: content-start;
     grid-column-end: content-end;
   }
 }
